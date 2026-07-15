@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roblox-injection"
+version = "0.2.1"
+description = "Patch scripts and config into Roblox place files in headless CI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Alex Thorne", email = "alex@thorne.dev"}
+]
+dependencies = [
+    "lxml>=4.9.0",
+    "pyyaml>=6.0",
+    "click>=8.1.0",
+    "lz4>=4.3.2",
+]
+
+[project.scripts]
+rbxinject = "roblox_injection.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
