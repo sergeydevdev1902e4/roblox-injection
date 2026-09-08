@@ -58,3 +58,5 @@ rbxinject dry-run place.rbxlx -m manifest.yaml
 ```bash
 pytest
 ```
+
+<!-- refreshed: 2026-09-08 -->
