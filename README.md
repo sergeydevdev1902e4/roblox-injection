@@ -59,4 +59,4 @@ rbxinject dry-run place.rbxlx -m manifest.yaml
 pytest
 ```
 
-<!-- refreshed: 2026-09-24 -->
+<!-- refreshed: 2026-09-25 -->
